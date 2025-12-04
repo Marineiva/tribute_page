@@ -93,7 +93,7 @@ li {
     background-color: var(--cor-superficie);
     text-align: justify;
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-    box-shadow: 5px px 5px var(--cor-sombra);
+    box-shadow: 5px 5px 5px var(--cor-sombra);
 }
 li:hover {
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
