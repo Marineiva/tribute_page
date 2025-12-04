@@ -1,0 +1,13 @@
+# Arquivos de sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos de log
+*.log
+
+# Diretórios de configuração de editores e IDEs
+.vscode/
+.idea/
+
+# Diretórios de dependências (bom ter para o futuro)
+node_modules/

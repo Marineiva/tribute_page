@@ -1,0 +1,184 @@
+/* Importa uma fonte simples do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    --cor-fundo: #fff8e1;      
+    --cor-texto: #4e342e;
+    --cor-primaria: #795548;
+    --cor-acento: #bd8815;
+    --cor-superficie: #ecdea4; /* Anteriormente --cor-fundo-item */
+    --cor-borda: #ddd;
+    --cor-sombra: #e9ad5f99; /* Cor para sombras consistentes */
+}
+
+/* Reset básico e tipografia */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--cor-acento);
+    color: var(--cor-texto);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    margin-bottom: 5px;
+}
+
+header h2 {
+    font-weight: 300;
+    font-size: 1.2em;
+    opacity: 0.8;
+}
+
+blockquote {
+    font-style: italic;
+    opacity: 0.9;
+}
+
+/* Imagem e Figura */
+.hero-image {
+    margin: 30px 0;
+    text-align: center;
+    box-shadow: 2px 4px 5px var(--cor-sombra);
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.hero-image figcaption {
+    font-style: italic;
+    margin-top: 10px;
+    color: var(--cor-primaria);
+    font-size: 0.9em;
+}
+
+/* Seções de Conteúdo */
+section {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--cor-borda);
+}
+li {
+    border-left: 5px solid var(--cor-acento);
+    padding: 15px 20px;
+    margin-top: 15px;
+    list-style-type: none;
+    background-color: var(--cor-superficie);
+    text-align: justify;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    box-shadow: 5px px 5px var(--cor-sombra);
+}
+li:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transform: scale(1.02);
+}
+
+section:last-of-type {
+    border-bottom: none;
+}
+
+section h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--cor-acento);
+    border-left: 5px solid var(--cor-acento);
+    padding-left: 10px;
+    margin-top: 0;
+}
+
+#legado p {
+    text-align: justify;
+}
+#wikipedia {
+    font-style: italic;
+}
+#wikipedia a {
+    color: var(--cor-acento);
+    text-decoration: none;
+    font-weight: bold;
+}
+#wikipedia a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé (Licença e Atribuição) */
+footer {
+    background-color: var(--cor-acento);
+    color: var(--cor-texto);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.8em;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+    padding: 0 20px;
+}
+
+footer a {
+    color: var(--cor-texto); /* Destaca o link da licença */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .autoria {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.licenca {
+    font-style: italic;
+}
+
+/* --- Media Queries para Responsividade --- */
+
+/* Para tablets e telas menores */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+    header {
+        padding: 40px 20px;
+    }
+}
+
+/* Para celulares */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2em;
+    }
+    header h2 {
+        font-size: 1em;
+    }
+}
